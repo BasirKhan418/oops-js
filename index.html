@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .basir{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .bank{
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 10px;
+        width: full;
+    }
+    .form{
+        margin-top: 20px;
+        background-color: #e7bebe;
+        padding: 20px;
+        border-radius: 10px;
+        width: full;
+
+    }
+    input{
+        
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+    button{
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f1f1f1;
+        margin-top: 10px;
+    }
+    table{
+        width: 100%;
+        background-color: rgb(199, 223, 223);
+        border:1px solid gainsboro;
+        border-radius: 10px;
+        
+    }
+    
+</style>
+<body>
+    <div class="basir">
+     <div class="bank">
+        <h1>Basir's Bank</h1>
+     </div>
+     <div class="form">
+        <input type="text" placeholder="Enter your name" id="name">
+        <input type="text" placeholder="Enter your balance" id="balance">
+     </div>
+     <div >
+        <button onclick="addAccount()">Create Account</button>
+
+     </div>
+    </div>
+    <div class="basir" id="accountSection">
+        <h1>Account Details</h1>
+        <table border="1">
+            <tr>
+                <th>Account No.</th>
+                <th>Name</th>
+                <th>Balance</th>
+            </tr>
+            <tbody id="accountDetails">
+                
+            </tbody>
+        </table>
+    </div>
+    <div class="basir">
+        <div class="bank">
+           <h1>Deposit and WithDraw Section</h1>
+        </div>
+        <div class="form">
+           <input type="text" placeholder="Enter your account no." id="accountNo">
+           <input type="text" placeholder="Enter your balance" id="amount">
+        </div>
+        <div >
+           <button onclick="DepositAmount()">Deposit amount</button>
+           <button onclick="WithDrawAmount()">WithDraw amount</button>
+        </div>
+       </div>
+       <script src="cfinjs.js"></script>
+</body>
+</html>
